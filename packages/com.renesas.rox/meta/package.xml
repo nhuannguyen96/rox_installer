@@ -1,0 +1,13 @@
+<Package>
+    <DisplayName>ROX Installer</DisplayName>
+    <Description>Install ROX — your ultimate productivity companion.xxxxxxxxxx</Description>
+    <Version>1.0.0</Version>
+    <ReleaseDate>2025-08-21</ReleaseDate>
+    <Script>installscript.qs</Script>
+    <!-- Custom Pages will be added here -->
+    <UserInterfaces>
+        <UserInterface>InstallationMode.ui</UserInterface>
+        <Title>Select Installation Mode</Title>
+    </UserInterfaces>
+    <Name>com.renesas.rox</Name>
+</Package>

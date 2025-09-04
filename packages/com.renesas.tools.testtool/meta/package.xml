@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Test Tool</DisplayName>
+    <Description>Tool using for build</Description>
+    <Version>1.0.0</Version>
+    <Script>installscript.qs</Script>
+    <ReleaseDate>2025-08-22</ReleaseDate>
+    <!-- <SortingPriority>10</SortingPriority> -->
+    <Dependencies></Dependencies>
+    <Licenses>
+        <License name="Creative Commons (CC0 1.0)" file="cc0.txt"/>
+        <License name="GNU GENERAL PUBLIC LICENSE Version 3" file="gpl3.txt"/>
+    </Licenses>
+</Package>

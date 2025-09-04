@@ -1,0 +1,9 @@
+QWidget {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 13px;
+}
+QPushButton:checked {
+    background-color: #00aaff;
+    color: white;
+    font-weight: bold;
+}

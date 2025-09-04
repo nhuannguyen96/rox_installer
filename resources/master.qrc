@@ -1,0 +1,9 @@
+<RCC>
+  <!-- Add more resources here -->
+  <qresource prefix="/">
+    <file>bin/windows/curl.exe</file>
+    <file>bin/windows/tar.exe</file>
+    <file>bin/windows/7z.exe</file>
+    <file>bin/windows/7z.dll</file>
+  </qresource>
+</RCC>

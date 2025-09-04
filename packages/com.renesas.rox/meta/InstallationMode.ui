@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InstallationMode</class>
+ <widget class="QWidget" name="InstallationMode">
+  <layout class="QVBoxLayout" name="mainLayout">
+
+   <!-- Title -->
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="text">
+      <string>Please select the installation mode</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string>font-weight: bold; font-size: 16px;</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Tab Buttons -->
+   <item>
+    <layout class="QHBoxLayout" name="tabLayout">
+     <item>
+      <widget class="QPushButton" name="onlineButton">
+       <property name="text">
+        <string>Online</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="offlineButton">
+       <property name="text">
+        <string>Offline</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <!-- Info Panel with Checkboxes -->
+   <item>
+    <widget class="QGroupBox" name="infoGroup">
+     <property name="title">
+      <string>Installation Mode Details</string>
+     </property>
+     <layout class="QVBoxLayout" name="groupLayout">
+      <item>
+       <widget class="QLabel" name="infoLabel">
+        <property name="text">
+         <string>Installation mode detail</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+        <layout class="QHBoxLayout" name="offlinePathLayout">
+          <item>
+            <widget class="QLineEdit" name="offlineBinaryPath">
+              <property name="visible">
+                <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>C:\Downloads</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QPushButton" name="browseOfflineBinary">
+              <property name="text">
+                <string>Browse...</string>
+              </property>
+              <property name="visible">
+                <bool>false</bool>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QLabel" name="pathStatus">
+              <property name="text">
+                <string>Path status...</string>
+              </property>
+              <property name="visible">
+                <bool>false</bool>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+      <item>
+        <widget class="QLabel" name="spinnerLabel">
+         <property name="text">
+          <string>🔄 Checking for internet access...</string>
+         </property>
+         <property name="visible">
+          <bool>false</bool>
+         </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QLabel" name="statusLabel">
+         <property name="text">
+          <string>Internet access status</string>
+         </property>
+         <property name="visible">
+          <bool>false</bool>
+         </property>
+        </widget>
+      </item>
+<item>
+  <layout class="QHBoxLayout" name="retryLayout">
+    <item>
+      <widget class="QPushButton" name="retryInternetButton">
+        <property name="text">
+          <string>Retry Internet Check</string>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>120</width>
+            <height>24</height>
+          </size>
+        </property>
+      </widget>
+    </item>
+    <item>
+      <spacer name="rightSpacer">
+        <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+          <size>
+            <width>40</width>
+            <height>20</height>
+          </size>
+        </property>
+      </spacer>
+    </item>
+  </layout>
+</item>
+
+
+     </layout>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

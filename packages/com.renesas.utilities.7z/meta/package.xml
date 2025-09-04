@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>7Z</DisplayName>
+    <Description>Bundled 7Z</Description>
+    <Script>installscript.qs</Script>
+    <Version>1.0.0</Version>
+    <ReleaseDate>2025-08-21</ReleaseDate>
+    <!-- Hide from component selection -->
+    <Virtual>true</Virtual>
+    <ForcedInstallation>true</ForcedInstallation>
+</Package>

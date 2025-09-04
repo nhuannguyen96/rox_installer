@@ -1,0 +1,13 @@
+<Installer>
+    <Name>ROX Installer</Name>
+    <Version>1.0.0</Version> <!-- Need mechanism to re-generate this-->
+    <Title>Nhuan</Title>
+    <Publisher>Renesas</Publisher>
+    <StyleSheet>style.qss</StyleSheet>
+    <StartMenuDir>ROX</StartMenuDir>
+    <TargetDir>C:\ROX</TargetDir>
+    <WizardStyle>Modern</WizardStyle>
+    <ControlScript>controller.js</ControlScript>
+    <InstallActionColumnVisible>true</InstallActionColumnVisible>
+    <AllowUnstableComponents>true</AllowUnstableComponents>
+</Installer>

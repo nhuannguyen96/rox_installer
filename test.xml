@@ -3,6 +3,8 @@
  <class>CustomReadyForInstallationPage</class>
  <widget class="QWidget" name="CustomReadyForInstallationPage">
   <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- Title -->
    <item>
     <widget class="QLabel" name="titleLabel">
      <property name="text">
@@ -16,34 +18,45 @@
      </property>
     </widget>
    </item>
+
+   <!-- Scrollable log box -->
    <item>
-    <widget class="QPlainTextEdit" name="logBox">
-     <property name="readOnly">
+    <widget class="QScrollArea" name="logScrollArea">
+     <property name="widgetResizable">
       <bool>true</bool>
      </property>
-     <property name="plainText">
-      <string>Installation details will appear here...</string>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <layout class="QVBoxLayout" name="scrollLayout">
+       <item>
+        <widget class="QPlainTextEdit" name="logBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="plainText">
+          <string>Installation details will appear here...</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+
+   <!-- Summary label -->
+   <item>
+    <widget class="QLabel" name="summaryLabel">
+     <property name="text">
+      <string>Installation requires 0 MB</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeft</set>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-style: italic; color: gray;</string>
      </property>
     </widget>
    </item>
-   <item>
-    <layout class="QHBoxLayout" name="buttonLayout">
-     <item>
-      <widget class="QPushButton" name="startButton">
-       <property name="text">
-        <string>Start Installation</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="cancelButton">
-       <property name="text">
-        <string>Cancel</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
+
   </layout>
  </widget>
  <resources/>
